@@ -3,7 +3,11 @@ export type ProductCategory =
   | "superbike" 
   | "supercar" 
   | "luxury-car"
-  | "classic";
+  | "classic"
+  | "electric-supercar"
+  | "hypercar"
+  | "luxury-suv"
+  | "vintage-supercar";
 
 export type ProductBrand = 
   | "Ducati"
@@ -20,7 +24,15 @@ export type ProductBrand =
   | "Bentley"
   | "Mercedes-Benz"
   | "Aston Martin"
-  | "Jaguar";
+  | "Jaguar"
+  | "Koenigsegg"
+  | "Pagani"
+  | "Rimac"
+  | "Tesla"
+  | "Lotus"
+  | "Maserati"
+  | "Lexus"
+  | "Triumph";
 
 export interface Product {
   id: string;
@@ -39,4 +51,6 @@ export interface Product {
   weight?: number;
   fuelType?: string;
   colors?: string[];
+  yearOfManufacture?: number;
+  limitedEdition?: boolean;
 }

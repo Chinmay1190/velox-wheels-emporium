@@ -714,7 +714,374 @@ export const products: Product[] = [
     fuelType: "Petrol",
     colors: ["Ivory", "Silver", "Ruby Red", "Aquamarine Blue"]
   },
-  // Continue adding more products here...
+  
+  // Adding 19 new products
+  
+  // New Superbikes
+  {
+    id: "sb-013",
+    name: "Triumph Speed Triple 1200 RS",
+    description: "The most powerful and technologically advanced Speed Triple ever, with a distinctive triple-cylinder engine and track-ready handling.",
+    price: 1899000, // ₹18,99,000
+    category: "superbike",
+    brand: "Triumph",
+    imageUrl: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "1160cc",
+    horsepower: 180,
+    topSpeed: 275,
+    acceleration: "3.1s",
+    weight: 198,
+    fuelType: "Petrol",
+    colors: ["Matt Silver Ice", "Sapphire Black", "Matt Carbon Black"],
+    yearOfManufacture: 2023
+  },
+  {
+    id: "sb-014",
+    name: "Honda CBR1100XX Super Blackbird",
+    description: "A legendary sport tourer that once held the title of world's fastest production motorcycle, combining high-speed capability with comfort.",
+    price: 1799000, // ₹17,99,000
+    category: "superbike",
+    brand: "Honda",
+    imageUrl: "https://images.unsplash.com/photo-1525160354320-d8e92641c563?q=80&w=1974&auto=format&fit=crop",
+    available: true,
+    engineSize: "1137cc",
+    horsepower: 164,
+    topSpeed: 290,
+    acceleration: "3.0s",
+    weight: 223,
+    fuelType: "Petrol",
+    colors: ["Pearl Black", "Candy Red", "Metallic Silver"],
+    yearOfManufacture: 2022,
+    limitedEdition: true
+  },
+  {
+    id: "sb-015",
+    name: "Ducati Diavel 1260 S",
+    description: "The ultimate power cruiser, blending Italian superbike performance with bold, muscular styling and exceptional handling.",
+    price: 2099000, // ₹20,99,000
+    category: "superbike",
+    brand: "Ducati",
+    imageUrl: "https://images.unsplash.com/photo-1591637333085-9757e4f3d365?q=80&w=1171&auto=format&fit=crop",
+    available: true,
+    featured: true,
+    engineSize: "1262cc",
+    horsepower: 159,
+    topSpeed: 270,
+    acceleration: "3.2s",
+    weight: 218,
+    fuelType: "Petrol",
+    colors: ["Ducati Red", "Total Black", "Thrilling Black and Dark Stealth"],
+    yearOfManufacture: 2023
+  },
+  
+  // New Supercars
+  {
+    id: "sc-013",
+    name: "Koenigsegg Jesko Absolut",
+    description: "The fastest Koenigsegg ever made, designed to break the 300 mph barrier with revolutionary aerodynamics and a 1600hp twin-turbo V8.",
+    price: 320000000, // ₹32,00,00,000
+    category: "hypercar",
+    brand: "Koenigsegg",
+    imageUrl: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    featured: true,
+    engineSize: "5065cc",
+    horsepower: 1600,
+    topSpeed: 500,
+    acceleration: "2.5s",
+    weight: 1320,
+    fuelType: "E85/Petrol",
+    colors: ["Tang Orange Pearl", "Raw Carbon", "Swedish Blue"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  {
+    id: "sc-014",
+    name: "Pagani Huayra BC Roadster",
+    description: "An engineering masterpiece limited to just 40 units worldwide, representing the pinnacle of Italian artistry and precision engineering.",
+    price: 350000000, // ₹35,00,00,000
+    category: "hypercar",
+    brand: "Pagani",
+    imageUrl: "https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "5980cc",
+    horsepower: 802,
+    topSpeed: 380,
+    acceleration: "2.8s",
+    weight: 1250,
+    fuelType: "Petrol",
+    colors: ["Blu Tricolore", "Exposed Carbon Fiber", "Custom Client Specifications"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  {
+    id: "sc-015",
+    name: "Rimac Nevera",
+    description: "The all-electric hypercar that rewrites the rulebook with four electric motors delivering a combined 1914 horsepower and unprecedented acceleration.",
+    price: 250000000, // ₹25,00,00,000
+    category: "electric-supercar",
+    brand: "Rimac",
+    imageUrl: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=1064&auto=format&fit=crop",
+    available: true,
+    engineSize: "Electric",
+    horsepower: 1914,
+    topSpeed: 412,
+    acceleration: "1.85s",
+    weight: 2150,
+    fuelType: "Electric",
+    colors: ["Stellar Black", "Galactic White", "Adriatic Blue"],
+    yearOfManufacture: 2024
+  },
+  {
+    id: "sc-016",
+    name: "McLaren Speedtail",
+    description: "McLaren's ultimate road-going machine with a three-seat layout inspired by the legendary F1, and a hybrid powertrain producing 1036 horsepower.",
+    price: 280000000, // ₹28,00,00,000
+    category: "hypercar",
+    brand: "McLaren",
+    imageUrl: "https://images.unsplash.com/photo-1616422285623-13ff0162193c?q=80&w=1931&auto=format&fit=crop",
+    available: true,
+    engineSize: "4000cc Hybrid",
+    horsepower: 1036,
+    topSpeed: 403,
+    acceleration: "2.9s",
+    weight: 1430,
+    fuelType: "Hybrid",
+    colors: ["Vision Satin Silver", "Heritage Gloss Dark Green", "Bespoke MSO Options"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  {
+    id: "sc-017",
+    name: "Ferrari SF90 Spider",
+    description: "Ferrari's first plug-in hybrid convertible supercar combines a twin-turbo V8 with three electric motors for open-top thrills with green credentials.",
+    price: 85000000, // ₹8,50,00,000
+    category: "supercar",
+    brand: "Ferrari",
+    imageUrl: "https://images.unsplash.com/photo-1617654112368-307b0c8deb36?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "3990cc Hybrid",
+    horsepower: 986,
+    topSpeed: 340,
+    acceleration: "2.5s",
+    weight: 1670,
+    fuelType: "Hybrid",
+    colors: ["Rosso Corsa", "Giallo Modena", "Blu Corsa", "Argento Nürburgring"],
+    yearOfManufacture: 2023
+  },
+  {
+    id: "sc-018",
+    name: "Tesla Roadster",
+    description: "The next-generation Tesla Roadster promises to be the quickest car in the world, with unprecedented acceleration, range, and performance.",
+    price: 45000000, // ₹4,50,00,000
+    category: "electric-supercar",
+    brand: "Tesla",
+    imageUrl: "https://images.unsplash.com/photo-1611740801993-01dc1ba7996c?q=80&w=1170&auto=format&fit=crop",
+    available: false, // Coming soon
+    engineSize: "Electric",
+    horsepower: 1100, // Estimated
+    topSpeed: 400, // Estimated
+    acceleration: "1.9s",
+    weight: 2000, // Estimated
+    fuelType: "Electric",
+    colors: ["Red Multi-Coat", "Midnight Silver Metallic", "Pearl White Multi-Coat"],
+    yearOfManufacture: 2025 // Future release
+  },
+  {
+    id: "sc-019",
+    name: "Lotus Evija",
+    description: "Britain's first all-electric hypercar, the Lotus Evija delivers nearly 2000 horsepower with revolutionary aerodynamics and stunning design.",
+    price: 210000000, // ₹21,00,00,000
+    category: "electric-supercar",
+    brand: "Lotus",
+    imageUrl: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "Electric",
+    horsepower: 1973,
+    topSpeed: 320,
+    acceleration: "2.8s",
+    weight: 1680,
+    fuelType: "Electric",
+    colors: ["Solaris Yellow", "Carbon Black", "Hethel Blue"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  
+  // New Luxury Cars
+  {
+    id: "lc-013",
+    name: "Rolls-Royce Boat Tail",
+    description: "The most exclusive Rolls-Royce of modern times, a coachbuilt masterpiece inspired by luxury yachts with a rear deck that opens to reveal bespoke champagne coolers.",
+    price: 2800000000, // ₹280,00,00,000
+    category: "luxury-car",
+    brand: "Rolls-Royce",
+    imageUrl: "https://images.unsplash.com/photo-1489686995744-f47e35e122f5?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "6750cc",
+    horsepower: 563,
+    topSpeed: 250,
+    acceleration: "5.0s",
+    weight: 2700,
+    fuelType: "Petrol",
+    colors: ["Custom Blue", "Bespoke Client Specification"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  {
+    id: "lc-014",
+    name: "Mercedes-Maybach GLS 600",
+    description: "The first SUV from Mercedes-Maybach combines the height of automotive luxury with the versatility of an SUV, featuring individual rear seats and champagne flutes.",
+    price: 45000000, // ₹4,50,00,000
+    category: "luxury-suv",
+    brand: "Mercedes-Benz",
+    imageUrl: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=983&auto=format&fit=crop",
+    available: true,
+    engineSize: "3982cc",
+    horsepower: 550,
+    topSpeed: 250,
+    acceleration: "4.9s",
+    weight: 2785,
+    fuelType: "Petrol",
+    colors: ["Obsidian Black", "Emerald Green", "Diamond White", "Selenite Grey"],
+    yearOfManufacture: 2023
+  },
+  {
+    id: "lc-015",
+    name: "Bentley Bacalar",
+    description: "A limited edition open-top grand tourer from Bentley's Mulliner division, featuring ethically sourced materials and completely bespoke specifications.",
+    price: 190000000, // ₹19,00,00,000
+    category: "luxury-car",
+    brand: "Bentley",
+    imageUrl: "https://images.unsplash.com/photo-1629447236130-24d082d558f0?q=80&w=1074&auto=format&fit=crop",
+    available: true,
+    engineSize: "6000cc",
+    horsepower: 650,
+    topSpeed: 320,
+    acceleration: "3.5s",
+    weight: 2200,
+    fuelType: "Petrol",
+    colors: ["Bespoke Client Specification"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  {
+    id: "lc-016",
+    name: "Aston Martin Valkyrie",
+    description: "A revolutionary hypercar born from the collaboration between Aston Martin and Red Bull Racing, designed to deliver Formula 1 performance on the road.",
+    price: 380000000, // ₹38,00,00,000
+    category: "hypercar",
+    brand: "Aston Martin",
+    imageUrl: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?q=80&w=1125&auto=format&fit=crop",
+    available: true,
+    engineSize: "6500cc",
+    horsepower: 1155,
+    topSpeed: 402,
+    acceleration: "2.5s",
+    weight: 1030,
+    fuelType: "Petrol",
+    colors: ["Aston Martin Racing Green", "Lunar White", "Valkyrie Silver"],
+    yearOfManufacture: 2023,
+    limitedEdition: true
+  },
+  
+  // Classic Vintage Supercars
+  {
+    id: "cc-006",
+    name: "Lamborghini Miura P400SV",
+    description: "Often regarded as the world's first supercar, the Miura's stunning design and mid-engine layout revolutionized high-performance automobiles.",
+    price: 450000000, // ₹45,00,00,000
+    category: "vintage-supercar",
+    brand: "Lamborghini",
+    imageUrl: "https://images.unsplash.com/photo-1577515979923-ac49650d9a5d?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "3929cc",
+    horsepower: 385,
+    topSpeed: 290,
+    acceleration: "6.5s",
+    weight: 1293,
+    fuelType: "Petrol",
+    colors: ["Arancio Miura", "Giallo Miura", "Verde Miura"],
+    yearOfManufacture: 1971,
+    limitedEdition: true
+  },
+  {
+    id: "cc-007",
+    name: "Ferrari F40",
+    description: "Created to celebrate Ferrari's 40th anniversary, the F40 was the fastest and most expensive Ferrari ever built at its launch in 1987.",
+    price: 520000000, // ₹52,00,00,000
+    category: "vintage-supercar",
+    brand: "Ferrari",
+    imageUrl: "https://images.unsplash.com/photo-1514136649217-b627b4b9cfb2?q=80&w=1074&auto=format&fit=crop",
+    available: true,
+    engineSize: "2936cc",
+    horsepower: 478,
+    topSpeed: 324,
+    acceleration: "3.8s",
+    weight: 1100,
+    fuelType: "Petrol",
+    colors: ["Rosso Corsa"],
+    yearOfManufacture: 1989,
+    limitedEdition: true
+  },
+  {
+    id: "cc-008",
+    name: "Porsche 959",
+    description: "A technological tour de force that pioneered many innovations now commonplace in performance cars, including all-wheel drive and adjustable suspension.",
+    price: 350000000, // ₹35,00,00,000
+    category: "vintage-supercar",
+    brand: "Porsche",
+    imageUrl: "https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?q=80&w=1287&auto=format&fit=crop",
+    available: true,
+    engineSize: "2849cc",
+    horsepower: 444,
+    topSpeed: 339,
+    acceleration: "3.7s",
+    weight: 1450,
+    fuelType: "Petrol",
+    colors: ["Guards Red", "Silver Metallic", "White"],
+    yearOfManufacture: 1986,
+    limitedEdition: true
+  },
+  {
+    id: "cc-009",
+    name: "McLaren F1",
+    description: "The legendary supercar that redefined performance, featuring a central driving position, gold-lined engine bay, and record-setting top speed that stood for years.",
+    price: 1800000000, // ₹180,00,00,000
+    category: "vintage-supercar",
+    brand: "McLaren",
+    imageUrl: "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    featured: true,
+    engineSize: "6064cc",
+    horsepower: 618,
+    topSpeed: 386,
+    acceleration: "3.2s",
+    weight: 1138,
+    fuelType: "Petrol",
+    colors: ["Papaya Orange", "British Racing Green", "Silver"],
+    yearOfManufacture: 1995,
+    limitedEdition: true
+  },
+  {
+    id: "cc-010",
+    name: "Jaguar XKSS",
+    description: "Based on the D-Type racing car, the XKSS was converted for road use and is one of the most valuable and desirable classic cars ever made. Only 16 were originally produced.",
+    price: 1650000000, // ₹165,00,00,000
+    category: "classic",
+    brand: "Jaguar",
+    imageUrl: "https://images.unsplash.com/photo-1585339236417-1e4634a09b0f?q=80&w=1170&auto=format&fit=crop",
+    available: true,
+    engineSize: "3442cc",
+    horsepower: 262,
+    topSpeed: 230,
+    acceleration: "5.2s",
+    weight: 975,
+    fuelType: "Petrol",
+    colors: ["British Racing Green", "Ecurie Ecosse Blue"],
+    yearOfManufacture: 1957,
+    limitedEdition: true
+  }
 ];
 
 // Helper function to get products by category
